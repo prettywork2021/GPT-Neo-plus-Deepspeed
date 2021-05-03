@@ -1,5 +1,6 @@
 # GPT-Neo-plus-Deepspeed
-I didn't knew i could model.half(), so i made this... Well, on the bright side, it might help someone. 
+I didn't knew i could do model.half(), so i made this... Well, on the bright side, it might help someone. 
+
 
 I use deepspeed's offload optimizer and parameters offload to run GPT-Neo with GPU.
 https://www.deepspeed.ai/
