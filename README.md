@@ -5,7 +5,7 @@ I didn't knew i could do model.half(), so i made this... Well, on the bright sid
 I use deepspeed's offload optimizer and parameters offload to run GPT-Neo with GPU.
 https://www.deepspeed.ai/
 
-It requires around 20 GB to 25 GB of ram to load GPT-Neo 2.7B model, but after model loads into ram, you can run gc and it will drop to around 10GB, plus depending on amount of ram your GPU has, after initializing deepspeed, your usage of CPU RAM will drop further.
+It requires around 20 GB to 25 GB of ram to load GPT-Neo 2.7B model, but after model loads into ram, you can run gc and it will drop to around 10GB, plus depending on amount of VRAM your GPU has, after initializing deepspeed, your usage of CPU RAM will drop further.
 
 I only tested it on my GTX-1070 8GB, so i don't know if it will work on other gpu's.
 
