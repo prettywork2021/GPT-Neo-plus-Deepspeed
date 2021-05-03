@@ -12,9 +12,9 @@ I only tested it on my GTX-1070 8GB, so i don't know if it will work on other gp
 In Deepspeed docs it also said that you can load very big model directly from NVME device, but as i have no NVME, i can't test or implement it, though it should be fairly straigtforward. https://www.deepspeed.ai/docs/config-json/#parameter-offloading 
 
 To test how fast it is i use 200 token prompt and 50 token to generate.
-Using 4 Core I5 7500 CPU: 51.8 seconds
-Using Deepspeed: 17 seconds
-Using model.generate() with fully loaded model to VRAM: 3.35 seconds
+- Using 4 Core I5 7500 CPU: 51.8 seconds
+- Using Deepspeed: 17 seconds
+- Using model.generate() with fully loaded model to VRAM: 3.35 seconds
 
 Deepspeed is 3 times faster than just CPU, though 5 times slower than fully loaded model. It might be because my generate function is inefficient.
 
