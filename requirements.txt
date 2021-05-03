@@ -1,0 +1,4 @@
+transformers
+torch
+deepspeed
+git+https://github.com/huggingface/transformers
