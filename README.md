@@ -11,8 +11,5 @@ It worked, but because of slow data transfer between GPU and CPU, and linear nat
 I only used methods of transfer provided by Pytorch, so that might be why it was so slow.
 I might look at some data transfer techniques to speedup transfer, but i doubt that it will do any major difference.
 
-Using my 4 core I5-7500 it takes around 51 seconds to generate 50 tokens with 1900 context, while this new method takes 240 seconds to do the same, so it pretty pointless. ¯\\_(ツ)_/¯
-I will release method if somebody wants it, though it is pretty easy to implement it yourself if needed.
-
 Update 13.05.21
 arrmansa had the same idea as i, but managed to do better. Here is his work if you want to try: https://github.com/arrmansa/Gpt-Neo-Limited-Vram-Cuda
